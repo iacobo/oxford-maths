@@ -4,7 +4,7 @@ import seaborn as sns; sns.set()
 
 def gamblerWalk(start=10,n=100,m=10,p=0.5,win=1,lose=-1,llim=0,ulim=None):
     """Simulate m trials of a gambler's walk of length n with starting amount
-    £10, probability of success p, £win on win, and £lose on lose.
+    £start, probability of success p, +£win on win, and +£lose on lose.
     Walk ends if walk reaches lower/upper limits llim or ulim."""
     
     x = np.arange(n)
